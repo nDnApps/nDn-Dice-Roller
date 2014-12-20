@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/probabilityStaticText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Target: "
+            android:textSize="10pt" />
+
+        <com.nDnDiceRoller.NumberRangeSpinner
+            android:id="@+id/probabilityTargetSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/probabilityResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Probability: 0.0%"
+            android:textSize="10pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back"/>
+    </LinearLayout>
+
+
+</LinearLayout>
